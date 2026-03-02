@@ -40,7 +40,7 @@ export default function Login() {
             <div className="mx-auto p-3 rounded-full bg-primary/20 w-fit mb-2">
               <Lock className="h-8 w-8 text-primary" />
             </div>
-            <CardTitle className="text-2xl">🚛 FilaCarga</CardTitle>
+            <CardTitle className="text-2xl">🚛 Transporte</CardTitle>
             <p className="text-sm text-muted-foreground">Acesso ao Dashboard</p>
           </CardHeader>
           <CardContent>
@@ -52,7 +52,7 @@ export default function Login() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="gestor@filacarga.com"
+                  placeholder="gestor@transporte.com"
                   required
                 />
               </div>

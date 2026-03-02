@@ -16,17 +16,16 @@ export default function NavBar({ children }: { children?: React.ReactNode }) {
   return (
     <nav className="border-b border-border bg-card">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <span className="text-xl font-bold text-primary">🚛 FilaCarga</span>
+        <span className="text-xl font-bold text-primary">🚛 Transporte</span>
         <div className="flex items-center gap-1">
           {links.map(({ to, label, icon: Icon }) => (
             <Link
               key={to}
               to={to}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                pathname === to
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${pathname === to
                   ? "bg-primary text-primary-foreground"
                   : "text-muted-foreground hover:text-foreground hover:bg-secondary"
-              }`}
+                }`}
             >
               <Icon className="h-4 w-4" />
               {label}
